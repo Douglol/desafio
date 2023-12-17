@@ -1,310 +1,459 @@
 @import url('https://fonts.googleapis.com/css2?family=Preahvihear&family=Ubuntu:wght@400;500;700&display=swap');
-header
+
+@media screen and (max-width: 768px)
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    header
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1
+    {
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(213, 96%, 18%);
+    }
+
+    p
+    {
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(231, 11%, 63%);
+    }
+
+    .tipo, .icon
+    {
+        margin-left: 15px;
+    }
+
+    .tipo
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    html, body
+    {
+        margin: 0;
+        background-color: hsl(217, 100%, 97%);
+    }
+
+    form, main
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top
+    {
+        width: 100%;
+    }
+
+    .lista
+    {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 175px;
+        margin-bottom: 80px;
+    }
+
+    .n
+    {
+        border: solid white 1px;
+        color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    label
+    {
+        color: hsl(213, 96%, 18%);
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    section
+    {
+        width: 85%;
+        margin-top: -20%;
+        padding: 15px;
+        background-color: white;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+
+
+    input
+    {
+        margin-bottom: 15px;
+        height: 35px;
+        width: 100%;
+        padding: 0;
+        border-radius: 5px;
+        border: solid;
+        border-color: hsl(217, 100%, 97%);
+    }
+
+    ::placeholder
+    {
+        padding-left: 10px;
+    }
+
+    footer
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+    }
+
+    .f1
+    {
+        justify-content: end!important;
+    }
+
+    .ativo
+    {
+        color: hsl(213, 96%, 18%);
+        background-color: hsl(206, 94%, 87%);
+    }
+
+    .back
+    {
+        margin-left: 10px;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(231, 11%, 63%);
+    }
+
+    .next
+    {
+        width: 100px;
+        height: 50px;
+        margin-right: 10px;
+        background-color: hsl(213, 96%, 18%);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .ajuste
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option
+    {
+        margin-bottom: 15px;
+        height: 85px;
+        width: 100%;
+        border: solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        border-color: hsl(217, 100%, 97%);
+    }
+
+    .mesano
+    {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ajuste2
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .selecao
+    {
+        background-color: hsl(217, 100%, 97%);
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* --- ON/OFF --- */
+
+    .switch
+    {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+    }
+
+    .switch input
+    { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .slider
+    {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before
+    {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    input:checked + .slider
+    {
+        background-color: hsl(213, 96%, 18%);
+    }
+    
+    input:focus + .slider
+    {
+        box-shadow: 0 0 1px hsl(213, 96%, 18%);
+    }
+    
+    input:checked + .slider:before
+    {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    .slider.round
+    {
+        border-radius: 34px;
+    }
+    
+    .slider.round:before
+    {
+        border-radius: 50%;
+    }
+    /* --- ON/OFF --- */
+
+    .checkp3
+    {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        margin-left: 15px;
+    }
+
+    .service
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        border: solid;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border-color: hsl(217, 100%, 97%);
+    }
+
+    .service2
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .somaopcao
+    {
+        margin-right: 15px;
+    }
+
+    .margintop
+    {
+        margin-top: 80px;
+    }
+
+    .marginbottom
+    {
+        margin-bottom: 80px;
+    }
+
+    .alinhar
+    {
+        text-align: center;
+        width: 300px;
+    }
+
+    .desktop
+    {
+        display: none;
+    }
 }
 
-h1
+@media screen and (min-width: 769px)
 {
-    font-family: 'Ubuntu', sans-serif;
-    color: hsl(213, 96%, 18%);
-}
+    html
+    {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-p
-{
-    font-family: 'Ubuntu', sans-serif;
-    color: hsl(231, 11%, 63%);
-}
+    header
+    {
+        display: flex;
+    }
 
-.tipo, .icon
-{
-    margin-left: 15px;
-}
+    body
+    {
+        background-color: hsl(217, 100%, 97%);
+    }
 
-.tipo
-{
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    .mobile
+    {
+        display: none;
+    }
 
-html, body
-{
-    margin: 0;
-    background-color: hsl(217, 100%, 97%);
-}
+    .side
+    {
+        width: 70%;
+        padding: 10px;
+    }
 
-form, main
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .desktop
+    {
+        display: flex;
+        align-items: center;
+        width: 800px;
+        border-radius: 10px;
+        background-color: white;
+    }
 
-.top
-{
-    width: 100%;
-}
+    .lista
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 40px;
+        height: 200px;
+    }
 
-.lista
-{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 175px;
-    margin-bottom: 80px;
-}
+    .n
+    {
+        border: solid white 1px;
+        color: white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-family: 'Ubuntu', sans-serif;
+    }
 
-.n
-{
-    border: solid white 1px;
-    color: white;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    font-family: 'Ubuntu', sans-serif;
-}
+    h1
+    {
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(213, 96%, 18%);
+        margin: 0;
+    }
 
-label
-{
-    color: hsl(213, 96%, 18%);
-    font-family: 'Ubuntu', sans-serif;
-}
+    p
+    {
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(231, 11%, 63%);
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-section
-{
-    width: 85%;
-    margin-top: -20%;
-    padding: 15px;
-    background-color: white;
-    padding-bottom: 10px;
-    border-radius: 10px;
-}
+    .ajuste
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    label
+    {
+        color: hsl(213, 96%, 18%);
+        font-family: 'Ubuntu', sans-serif;
+    }
 
-input
-{
-    margin-bottom: 15px;
-    height: 35px;
-    width: 100%;
-    padding: 0;
-    border-radius: 5px;
-    border: solid;
-    border-color: hsl(217, 100%, 97%);
-}
+    input
+    {
+        margin-bottom: 15px;
+        height: 35px;
+        width: 100%;
+        padding: 0;
+        border-radius: 5px;
+        border: solid;
+        border-color: hsl(217, 100%, 97%);
+    }
 
-::placeholder
-{
-    padding-left: 10px;
-}
+    .f1
+    {
+        display: flex;
+        justify-content: end;
+    }
 
-footer
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    bottom: 0;
-    background-color: white;
-}
+    .back
+    {
+        margin-left: 10px;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(231, 11%, 63%);
+    }
 
-.f1
-{
-    justify-content: end!important;
-}
+    .next
+    {
+        width: 100px;
+        height: 40px;
+        background-color: hsl(213, 96%, 18%);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+    }
 
-.ativo
-{
-    color: hsl(213, 96%, 18%);
-    background-color: hsl(206, 94%, 87%);
-}
-
-.back
-{
-    margin-left: 10px;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-    color: hsl(231, 11%, 63%);
-}
-
-.next
-{
-    width: 100px;
-    height: 50px;
-    margin-right: 10px;
-    background-color: hsl(213, 96%, 18%);
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.ajuste
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.option
-{
-    margin-bottom: 15px;
-    height: 85px;
-    width: 100%;
-    border: solid;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    border-color: hsl(217, 100%, 97%);
-}
-
-.mesano
-{
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ajuste2
-{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.selecao
-{
-    background-color: hsl(217, 100%, 97%);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* --- ON/OFF --- */
-
-.switch
-{
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 24px;
-}
-
-.switch input
-{ 
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-.slider
-{
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.slider:before
-{
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-  
-input:checked + .slider
-{
-    background-color: hsl(213, 96%, 18%);
-}
-  
-input:focus + .slider
-{
-    box-shadow: 0 0 1px hsl(213, 96%, 18%);
-}
-  
-input:checked + .slider:before
-{
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.slider.round
-{
-    border-radius: 34px;
-}
-  
-.slider.round:before
-{
-    border-radius: 50%;
-}
-/* --- ON/OFF --- */
-
-.checkp3
-{
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-left: 15px;
-}
-
-.service
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 65px;
-    border: solid;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border-color: hsl(217, 100%, 97%);
-}
-
-.service2
-{
-    display: flex;
-    align-items: center;
-}
-
-.somaopcao
-{
-    margin-right: 15px;
-}
-
-.margintop
-{
-    margin-top: 80px;
-}
-
-.marginbottom
-{
-    margin-bottom: 80px;
-}
-
-.alinhar
-{
-    text-align: center;
-    width: 300px;
+    .ativo
+    {
+        color: hsl(213, 96%, 18%);
+        background-color: hsl(206, 94%, 87%);
+    }
 }
