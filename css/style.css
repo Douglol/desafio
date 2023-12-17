@@ -32,11 +32,10 @@ p
 html, body
 {
     margin: 0;
-    height: 100% - footer;
     background-color: hsl(217, 100%, 97%);
 }
 
-form
+form, main
 {
     display: flex;
     flex-direction: column;
@@ -163,6 +162,7 @@ footer
     height: 85px;
     width: 100%;
     border: solid;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     border-color: hsl(217, 100%, 97%);
@@ -176,7 +176,7 @@ footer
     align-items: center;
 }
 
-.ajusteano
+.ajuste2
 {
     margin-top: 0;
     margin-bottom: 0;
@@ -261,3 +261,50 @@ input:checked + .slider:before
     border-radius: 50%;
 }
 /* --- ON/OFF --- */
+
+.checkp3
+{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-left: 15px;
+}
+
+.service
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border: solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-color: hsl(217, 100%, 97%);
+}
+
+.service2
+{
+    display: flex;
+    align-items: center;
+}
+
+.somaopcao
+{
+    margin-right: 15px;
+}
+
+.margintop
+{
+    margin-top: 80px;
+}
+
+.marginbottom
+{
+    margin-bottom: 80px;
+}
+
+.alinhar
+{
+    text-align: center;
+    width: 300px;
+}
