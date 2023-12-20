@@ -332,6 +332,22 @@
         text-decoration: none;
         font-family: 'Ubuntu', sans-serif;
     }
+
+    .erroinput
+    {
+        border-color: hsl(354, 84%, 57%)!important;
+    }
+
+    .selecaoazul
+    {
+        color: hsl(213, 96%, 18%);
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .selecaocinza
+    {
+        color: hsl(231, 11%, 63%);
+        font-family: 'Ubuntu', sans-serif;
+    }
 }
 
 @media screen and (min-width: 769px)
@@ -454,9 +470,14 @@
         border-color: hsl(217, 100%, 97%);
     }
 
-    label
+    .selecaoazul
     {
         color: hsl(213, 96%, 18%);
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .selecaocinza
+    {
+        color: hsl(231, 11%, 63%);
         font-family: 'Ubuntu', sans-serif;
     }
 
@@ -467,7 +488,7 @@
         width: 100%;
         padding: 0;
         border-radius: 5px;
-        border: solid;
+        border: solid 1px;
         border-color: hsl(217, 100%, 97%);
     }
 
@@ -588,16 +609,6 @@
         transition: .4s;
     }
     
-    input:checked + .slider
-    {
-        background-color: hsl(213, 96%, 18%);
-    }
-    
-    input:focus + .slider
-    {
-        box-shadow: 0 0 1px hsl(213, 96%, 18%);
-    }
-    
     input:checked + .slider:before
     {
         -webkit-transform: translateX(26px);
@@ -675,6 +686,16 @@
     {
         display: flex;
         align-items: center;
+    }
+
+    .erroinput
+    {
+        border-color: hsl(354, 84%, 57%)!important;
+    }
+
+    .labelselecao
+    {
+        font-family: 'Ubuntu', sans-serif;
     }
 
     /* final */
