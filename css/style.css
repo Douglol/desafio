@@ -91,12 +91,11 @@
 
     input
     {
-        margin-bottom: 15px;
         height: 35px;
         width: 100%;
         padding: 0;
         border-radius: 5px;
-        border: solid;
+        border: solid 1px;
         border-color: hsl(217, 100%, 97%);
     }
 
@@ -144,7 +143,6 @@
         background-color: hsl(213, 96%, 18%);
         color: white;
         border-radius: 10px;
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -159,16 +157,23 @@
         align-items: center;
     }
 
-    .option
+    .optionm
     {
         margin-bottom: 15px;
         height: 85px;
         width: 100%;
-        border: solid;
+        border: solid 1px;
         border-radius: 10px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         border-color: hsl(217, 100%, 97%);
+    }
+
+    .optionm_2
+    {
+        display: flex;
+        align-items: center;
     }
 
     .mesano
@@ -279,7 +284,7 @@
         justify-content: space-between;
         align-items: center;
         height: 65px;
-        border: solid;
+        border: solid 1px;
         border-radius: 10px;
         margin-bottom: 10px;
         border-color: hsl(217, 100%, 97%);
@@ -325,7 +330,6 @@
         background-color: hsl(243, 100%, 62%);
         color: white;
         border-radius: 10px;
-        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -343,10 +347,31 @@
         color: hsl(213, 96%, 18%);
         font-family: 'Ubuntu', sans-serif;
     }
+
     .selecaocinza
     {
         color: hsl(231, 11%, 63%);
         font-family: 'Ubuntu', sans-serif;
+    }
+
+    #hmv1, #hmv2, #hmv3
+    {
+        margin: 0;
+        margin-right: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(213, 96%, 18%);
+    }
+
+    .disabled-link
+    {
+        pointer-events: none;
+    }
+
+    #herro1m, #herro2m, #herro3m
+    {
+        margin: 0;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(354, 84%, 57%);
     }
 }
 
@@ -371,6 +396,12 @@
         background-color: hsl(217, 100%, 97%);
     }
 
+    label
+    {
+        color: hsl(213, 96%, 18%);
+        font-family: 'Ubuntu', sans-serif;
+    }
+
     .mobile
     {
         display: none;
@@ -380,6 +411,11 @@
     {
         width: 70%;
         padding: 10px;
+    }
+
+    .disabled-link
+    {
+        pointer-events: none;
     }
 
     .desktop
@@ -456,7 +492,7 @@
         align-items: center;
     }
 
-    .option
+    .optiond1, .optiond2, .optiond3
     {
         display: flex;
         flex-direction: column;
@@ -465,9 +501,15 @@
         margin-bottom: 15px;
         height: 150px;
         width: 125px;
-        border: solid;
+        border: solid 1px;
         border-radius: 10px;
         border-color: hsl(217, 100%, 97%);
+        cursor: pointer;
+    }
+
+    .optionP23
+    {
+        border-color: hsl(243, 100%, 62%)!important;
     }
 
     .selecaoazul
@@ -483,7 +525,6 @@
 
     input
     {
-        margin-bottom: 15px;
         height: 35px;
         width: 100%;
         padding: 0;
@@ -627,13 +668,14 @@
     }
     /* --- ON/OFF --- */
 
-    .checkp3
+    .checkp3_1d, .checkp3_2d, .checkp3_3d
     {
         width: 15px;
         height: 15px;
         margin: 0;
+        cursor: pointer;
     }
-
+    
     .planodesktop
     {
         display: flex;
@@ -669,14 +711,14 @@
         margin-top: 20px;
     }
 
-    .service
+    .service_1, .service_2, .service_3
     {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 65px;
         width: 400px;
-        border: solid;
+        border: solid 1px;
         border-radius: 10px;
         margin-bottom: 10px;
         border-color: hsl(217, 100%, 97%);
@@ -696,6 +738,21 @@
     .labelselecao
     {
         font-family: 'Ubuntu', sans-serif;
+    }
+
+    #hdv1, #hdv2, #hdv3
+    {
+        margin: 0;
+        margin-bottom: 10px;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(213, 96%, 18%);
+    }
+
+    #herro1d, #herro2d, #herro3d
+    {
+        margin: 0;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(354, 84%, 57%);
     }
 
     /* final */

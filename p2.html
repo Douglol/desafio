@@ -23,30 +23,39 @@
                 <h1>Select your plan</h1>
                 <p>You have the option of monthly or yearly billing.</p>
                 <div class="ajuste">
-                    <div class="option">
-                        <img class="icon" src="./images/icon-arcade.svg" alt="arcade">
-                        <div>
-                            <label class="tipo">Arcade</label>
-                            <p class="tipo">$9/mo</p>
+                    <div class="optionm">
+                        <div class="optionm_2">
+                            <img class="icon" src="./images/icon-arcade.svg" alt="arcade">
+                            <div>
+                                <label class="tipo">Arcade</label>
+                                <p id="mv1" class="tipo">$9/mo</p>
+                            </div>
                         </div>
+                        <h5 id="hmv1"></h5>
                     </div>
                 </div>
                 <div class="ajuste">
-                    <div class="option">
-                        <img class="icon" src="./images/icon-advanced.svg" alt="advanced">
-                        <div>
-                            <label class="tipo">Advance</label>
-                            <p class="tipo">$12/mo</p>
+                    <div class="optionm">
+                        <div class="optionm_2">
+                            <img class="icon" src="./images/icon-advanced.svg" alt="advanced">
+                            <div>
+                                <label class="tipo">Advance</label>
+                                <p id="mv2" class="tipo">$12/mo</p>
+                            </div>
                         </div>
+                        <h5 id="hmv2"></h5>
                     </div>
                 </div>
                 <div class="ajuste">
-                    <div class="option">
-                        <img class="icon" src="./images/icon-pro.svg" alt="pro">
-                        <div>
-                            <label class="tipo">Pro</label>
-                            <p class="tipo">$15/mo</p>
+                    <div class="optionm">
+                        <div class="optionm_2">
+                            <img class="icon" src="./images/icon-pro.svg" alt="pro">
+                            <div>
+                                <label class="tipo">Pro</label>
+                                <p id="mv3" class="tipo">$15/mo</p>
+                            </div>
                         </div>
+                        <h5 id="hmv3"></h5>
                     </div>
                 </div>
                 <div class="selecao">
@@ -66,7 +75,7 @@
             </footer>
         </form>
     </div>
-
+<!-- -------------------------------------------------------------------------------- -->
     <div class="desktop">
         <header>
             <img class="side" src="images/bg-sidebar-desktop.svg" alt="desktop">
@@ -102,34 +111,37 @@
             </div>
         </header>
         <form>
-            <section>
+            <section id="selecaoP2" >
                 <h1>Select your plan</h1>
                 <p>You have the option of monthly or yearly billing.</p>
                 <div class="planodesktop">
                     <div class="ajuste">
-                        <div class="option">
+                        <div class="optiond1" onmouseover="optP2Over_1()" onmouseout="optP2Out_1()">
                             <img class="icon" src="./images/icon-arcade.svg" alt="arcade">
                             <div>
                                 <label class="labelselecao">Arcade</label>
-                                <p class="valor">$9/mo</p>
+                                <p id="dv1" class="valor">$9/mo</p>
+                                <h5 id="hdv1"></h5>
                             </div>
                         </div>
                     </div>
                     <div class="ajuste">
-                        <div class="option">
+                        <div class="optiond2" onmouseover="optP2Over_2()" onmouseout="optP2Out_2()">
                             <img class="icon" src="./images/icon-advanced.svg" alt="advanced">
                             <div>
                                 <label class="labelselecao">Advance</label>
-                                <p class="valor">$12/mo</p>
+                                <p id="dv2" class="valor">$12/mo</p>
+                                <h5 id="hdv2"></h5>
                             </div>
                         </div>
                     </div>
                     <div class="ajuste">
-                        <div class="option">
+                        <div class="optiond3" onmouseover="optP2Over_3()" onmouseout="optP2Out_3()">
                             <img class="icon" src="./images/icon-pro.svg" alt="pro">
                             <div>
                                 <label class="labelselecao">Pro</label>
-                                <p class="valor">$15/mo</p>
+                                <p id="dv3" class="valor">$15/mo</p>
+                                <h5 id="hdv3"></h5>
                             </div>
                         </div>
                     </div>
