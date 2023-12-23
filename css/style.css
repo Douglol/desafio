@@ -157,7 +157,7 @@
         align-items: center;
     }
 
-    .optionm
+    .optionm1, .optionm2, .optionm3
     {
         margin-bottom: 15px;
         height: 85px;
@@ -170,10 +170,16 @@
         border-color: hsl(217, 100%, 97%);
     }
 
-    .optionm_2
+    #optionm
     {
         display: flex;
         align-items: center;
+    }
+
+    .optionMs
+    {
+        border-color: hsl(243, 100%, 62%)!important;
+        background-color: hsl(217, 100%, 97%);
     }
 
     .mesano
@@ -278,7 +284,7 @@
         margin-left: 15px;
     }
 
-    .service
+    .service_1m, .service_2m, .service_3m
     {
         display: flex;
         justify-content: space-between;
@@ -470,6 +476,7 @@
     {
         margin-top: 0;
         margin-bottom: 0;
+        pointer-events: none;
     }
 
     .step
@@ -492,7 +499,7 @@
         align-items: center;
     }
 
-    .optiond1, .optiond2, .optiond3
+    #optiond1, #optiond2, #optiond3
     {
         display: flex;
         flex-direction: column;
@@ -505,6 +512,12 @@
         border-radius: 10px;
         border-color: hsl(217, 100%, 97%);
         cursor: pointer;
+    }
+
+    .optionDs
+    {
+        border-color: hsl(243, 100%, 62%)!important;
+        background-color: hsl(217, 100%, 97%);
     }
 
     .optionP23
@@ -738,6 +751,7 @@
     .labelselecao
     {
         font-family: 'Ubuntu', sans-serif;
+        cursor: pointer;
     }
 
     #hdv1, #hdv2, #hdv3
@@ -755,10 +769,52 @@
         color: hsl(354, 84%, 57%);
     }
 
+    .adicaop3
+    {
+        font-family: 'Ubuntu', sans-serif;
+        margin-right: 10px;
+        color: hsl(243, 100%, 62%);
+        pointer-events: none;
+    }
+
+    .fundoP4
+    {
+        background-color: hsl(217, 100%, 97%);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .fundoP42
+    {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .ajusteP4
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hdv
+    {
+        margin: 0;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(213, 96%, 18%);
+    }
+
+    h3
+    {
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(243, 100%, 62%);
+        margin: 0;
+    }
+
     /* final */
     .alinhar
     {
         text-align: center;
-        width: 300px;
+        width: 400px;
     }
 }

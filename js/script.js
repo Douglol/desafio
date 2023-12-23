@@ -145,7 +145,8 @@ var getValMobile3 = function()
 /* ----------------------------------------------------- */
 /* Desktop */
 /* ----------------------------------------------------- */
-function monthlyYearlyDesktop()
+var monthlyYearlyD = false;
+var monthlyYearlyDesktop = function()
 {
     const monthly = document.querySelector("#monthlyd");
     const yearly = document.querySelector("#yearlyd");
@@ -161,6 +162,7 @@ function monthlyYearlyDesktop()
         document.getElementById("hdv2").innerHTML = "2 months free";
         document.getElementById("dv3").innerHTML = "$150/yr";
         document.getElementById("hdv3").innerHTML = "2 months free";
+        monthlyYearlyD = true;
     }
     else
     {
@@ -174,44 +176,93 @@ function monthlyYearlyDesktop()
         document.getElementById("hdv2").innerHTML = "";
         document.getElementById("dv3").innerHTML = "$15/mo";
         document.getElementById("hdv3").innerHTML = "";
+        monthlyYearlyD = false;
     }
 }
 
 function optP2Over_1()
 {
-    const optionP2 = document.querySelector(".optiond1");
+    const optionP2 = document.querySelector("#optiond1");
     optionP2.classList.add("optionP23");
 }
 function optP2Over_2()
 {
-    const optionP2 = document.querySelector(".optiond2");
+    const optionP2 = document.querySelector("#optiond2");
     optionP2.classList.add("optionP23");
 }
 function optP2Over_3()
 {
-    const optionP2 = document.querySelector(".optiond3");
+    const optionP2 = document.querySelector("#optiond3");
     optionP2.classList.add("optionP23");
 }
 // ------------------------------------
 function optP2Out_1()
 {
-    const optionP2 = document.querySelector(".optiond1");
+    const optionP2 = document.querySelector("#optiond1");
     optionP2.classList.remove("optionP23");
 }
 function optP2Out_2()
 {
-    const optionP2 = document.querySelector(".optiond2");
+    const optionP2 = document.querySelector("#optiond2");
     optionP2.classList.remove("optionP23");
 }
 function optP2Out_3()
 {
-    const optionP2 = document.querySelector(".optiond3");
+    const optionP2 = document.querySelector("#optiond3");
     optionP2.classList.remove("optionP23");
+}
+// ------------------------------------
+var valor1P2D = false;
+var optP2D_slctd1 = function()
+{
+    var optP21 = document.querySelector("#optiond1");
+    if(valor1P2D == false && valor2P2D == false && valor3P2D == false)
+    {
+        optP21.classList.add("optionDs");
+        valor1P2D = true;
+    }
+    else
+    {
+        optP21.classList.remove("optionDs");
+        valor1P2D = false;
+    }
+}
+
+var valor2P2D = false;
+var optP2D_slctd2 = function()
+{
+    var optP22 = document.querySelector("#optiond2");
+    if(valor1P2D == false && valor2P2D == false && valor3P2D == false)
+    {
+        optP22.classList.add("optionDs");
+        valor2P2D = true;
+    }
+    else
+    {
+        optP22.classList.remove("optionDs");
+        valor2P2D = false;
+    }
+}
+
+var valor3P2D = false;
+var optP2D_slctd3 = function()
+{
+    var optP23 = document.querySelector("#optiond3");
+    if(valor1P2D == false && valor2P2D == false && valor3P2D == false)
+    {
+        optP23.classList.add("optionDs");
+        valor3P2D = true;
+    }
+    else
+    {
+        optP23.classList.remove("optionDs");
+        valor3P2D = false;
+    }
 }
 /* ----------------------------------------------------- */
 /* Mobile */
 /* ----------------------------------------------------- */
-function monthlyYearlyMobile()
+var monthlyYearlyMobile = function()
 {
     const monthly = document.querySelector("#monthlym");
     const yearly = document.querySelector("#yearlym");
@@ -240,6 +291,54 @@ function monthlyYearlyMobile()
         document.getElementById("hmv2").innerHTML = "";
         document.getElementById("mv3").innerHTML = "$15/mo";
         document.getElementById("hmv3").innerHTML = "";
+    }
+}
+// ------------------------------------
+var valor1P2M = false;
+var optP2M_slctd1 = function()
+{
+    var optP21m = document.querySelector(".optionm1");
+    if(valor1P2M == false && valor2P2M == false && valor3P2M == false)
+    {
+        optP21m.classList.add("optionMs");
+        valor1P2M = true;
+    }
+    else
+    {
+        optP21m.classList.remove("optionMs");
+        valor1P2M = false;
+    }
+}
+
+var valor2P2M = false;
+var optP2M_slctd2 = function()
+{
+    var optP22m = document.querySelector(".optionm2");
+    if(valor1P2M == false && valor2P2M == false && valor3P2M == false)
+    {
+        optP22m.classList.add("optionMs");
+        valor2P2M = true;
+    }
+    else
+    {
+        optP22m.classList.remove("optionMs");
+        valor2P2M = false;
+    }
+}
+
+var valor3P2M = false;
+var optP2M_slctd3 = function()
+{
+    var optP23m = document.querySelector(".optionm3");
+    if(valor1P2M == false && valor2P2M == false && valor3P2M == false)
+    {
+        optP23m.classList.add("optionMs");
+        valor3P2M = true;
+    }
+    else
+    {
+        optP23m.classList.remove("optionMs");
+        valor3P2M = false;
     }
 }
 // p2
@@ -280,3 +379,141 @@ function optP3Out_3()
     optionP2.classList.remove("optionP23");
 }
 // ------------------------------------
+var valor1P3D = false;
+var optP3D_slctd1 = function()
+{
+    var optP31 = document.querySelector(".service_1");
+    if(valor1P3D == false)
+    {
+        optP31.classList.add("optionDs");
+        valor1P3D = true;
+    }
+    else
+    {
+        optP31.classList.remove("optionDs");
+        valor1P3D = false;
+    }
+}
+
+var valor2P3D = false;
+var optP3D_slctd2 = function()
+{
+    var optP32 = document.querySelector(".service_2");
+    if(valor2P3D == false)
+    {
+        optP32.classList.add("optionDs");
+        valor2P3D = true;
+    }
+    else
+    {
+        optP32.classList.remove("optionDs");
+        valor2P3D = false;
+    }
+}
+
+var valor3P3D = false;
+var optP3D_slctd3 = function()
+{
+    var optP33 = document.querySelector(".service_3");
+    if(valor3P3D == false)
+    {
+        optP33.classList.add("optionDs");
+        valor3P3D = true;
+    }
+    else
+    {
+        optP33.classList.remove("optionDs");
+        valor3P3D = false;
+    }
+}
+/* ----------------------------------------------------- */
+/* Mobile */
+/* ----------------------------------------------------- */
+var valor1P3M = false;
+var optP3M_slctd1 = function()
+{
+    var optP31 = document.querySelector(".service_1m");
+    if(valor1P3M == false)
+    {
+        optP31.classList.add("optionMs");
+        valor1P3M = true;
+    }
+    else
+    {
+        optP31.classList.remove("optionMs");
+        valor1P3M = false;
+    }
+}
+
+var valor2P3M = false;
+var optP3M_slctd2 = function()
+{
+    var optP32 = document.querySelector(".service_2m");
+    if(valor2P3M == false)
+    {
+        optP32.classList.add("optionMs");
+        valor2P3M = true;
+    }
+    else
+    {
+        optP32.classList.remove("optionMs");
+        valor2P3M = false;
+    }
+}
+
+var valor3P3M = false;
+var optP3M_slctd3 = function()
+{
+    var optP33 = document.querySelector(".service_3m");
+    if(valor3P3M == false)
+    {
+        optP33.classList.add("optionMs");
+        valor3P3M = true;
+    }
+    else
+    {
+        optP33.classList.remove("optionMs");
+        valor3P3M = false;
+    }
+}
+// P3
+
+// P4
+/* ----------------------------------------------------- */
+/* Desktop */
+/* ----------------------------------------------------- */
+/*
+if(monthlyYearlyD)
+{
+    if(valor1P2D)
+    {
+        var valorfinalP2 = 9;
+    }
+    else if(valor2P2D)
+    {
+        var valorfinalP2 = 12;
+    }
+    else if(valor3P2D)
+    {
+        var valorfinalP2 = 15;
+    }
+}
+else
+{
+    if(valor1P2D)
+    {
+        var valorfinalP2 = 90;
+    }
+    else if(valor2P2D)
+    {
+        var valorfinalP2 = 120;
+    }
+    else if(valor3P2D)
+    {
+        var valorfinalP2 = 150;
+    }
+}
+*/
+/* ----------------------------------------------------- */
+/* Mobile */
+/* ----------------------------------------------------- */

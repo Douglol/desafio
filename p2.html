@@ -23,8 +23,8 @@
                 <h1>Select your plan</h1>
                 <p>You have the option of monthly or yearly billing.</p>
                 <div class="ajuste">
-                    <div class="optionm">
-                        <div class="optionm_2">
+                    <div class="optionm1" onclick="optP2M_slctd1()">
+                        <div id="optionm">
                             <img class="icon" src="./images/icon-arcade.svg" alt="arcade">
                             <div>
                                 <label class="tipo">Arcade</label>
@@ -35,8 +35,8 @@
                     </div>
                 </div>
                 <div class="ajuste">
-                    <div class="optionm">
-                        <div class="optionm_2">
+                    <div class="optionm2" onclick="optP2M_slctd2()">
+                        <div id="optionm">
                             <img class="icon" src="./images/icon-advanced.svg" alt="advanced">
                             <div>
                                 <label class="tipo">Advance</label>
@@ -47,8 +47,8 @@
                     </div>
                 </div>
                 <div class="ajuste">
-                    <div class="optionm">
-                        <div class="optionm_2">
+                    <div class="optionm3" onclick="optP2M_slctd3()">
+                        <div id="optionm">
                             <img class="icon" src="./images/icon-pro.svg" alt="pro">
                             <div>
                                 <label class="tipo">Pro</label>
@@ -116,7 +116,7 @@
                 <p>You have the option of monthly or yearly billing.</p>
                 <div class="planodesktop">
                     <div class="ajuste">
-                        <div class="optiond1" onmouseover="optP2Over_1()" onmouseout="optP2Out_1()">
+                        <div id="optiond1" onmouseover="optP2Over_1()" onmouseout="optP2Out_1()" onclick="optP2D_slctd1()">
                             <img class="icon" src="./images/icon-arcade.svg" alt="arcade">
                             <div>
                                 <label class="labelselecao">Arcade</label>
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                     <div class="ajuste">
-                        <div class="optiond2" onmouseover="optP2Over_2()" onmouseout="optP2Out_2()">
+                        <div id="optiond2" onmouseover="optP2Over_2()" onmouseout="optP2Out_2()" onclick="optP2D_slctd2()">
                             <img class="icon" src="./images/icon-advanced.svg" alt="advanced">
                             <div>
                                 <label class="labelselecao">Advance</label>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                     <div class="ajuste">
-                        <div class="optiond3" onmouseover="optP2Over_3()" onmouseout="optP2Out_3()">
+                        <div id="optiond3" onmouseover="optP2Over_3()" onmouseout="optP2Out_3()" onclick="optP2D_slctd3()">
                             <img class="icon" src="./images/icon-pro.svg" alt="pro">
                             <div>
                                 <label class="labelselecao">Pro</label>
