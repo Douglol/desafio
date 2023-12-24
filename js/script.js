@@ -259,9 +259,18 @@ var optP2D_slctd3 = function()
         valor3P2D = false;
     }
 }
+var P2ToP4D = function()
+{
+    localStorage.setItem('myP2D', monthlyYearlyD);
+    localStorage.setItem('v1P2D', valor1P2D);
+    localStorage.setItem('v2P2D', valor2P2D);
+    localStorage.setItem('v3P2D', valor3P2D);
+    window.location.href = 'p4.html';
+}
 /* ----------------------------------------------------- */
 /* Mobile */
 /* ----------------------------------------------------- */
+var monthlyYearlyM = false;
 var monthlyYearlyMobile = function()
 {
     const monthly = document.querySelector("#monthlym");
@@ -278,6 +287,7 @@ var monthlyYearlyMobile = function()
         document.getElementById("hmv2").innerHTML = "2 months free";
         document.getElementById("mv3").innerHTML = "$150/yr";
         document.getElementById("hmv3").innerHTML = "2 months free";
+        monthlyYearlyM = true;
     }
     else
     {
@@ -291,6 +301,7 @@ var monthlyYearlyMobile = function()
         document.getElementById("hmv2").innerHTML = "";
         document.getElementById("mv3").innerHTML = "$15/mo";
         document.getElementById("hmv3").innerHTML = "";
+        monthlyYearlyM = false;
     }
 }
 // ------------------------------------
@@ -340,6 +351,14 @@ var optP2M_slctd3 = function()
         optP23m.classList.remove("optionMs");
         valor3P2M = false;
     }
+}
+var P2ToP4M = function()
+{
+    localStorage.setItem('myP2M', monthlyYearlyM);
+    localStorage.setItem('v1P2M', valor1P2M);
+    localStorage.setItem('v2P2M', valor2P2M);
+    localStorage.setItem('v3P2M', valor3P2M);
+    window.location.href = 'p4.html';
 }
 // p2
 
@@ -482,38 +501,82 @@ var optP3M_slctd3 = function()
 /* ----------------------------------------------------- */
 /* Desktop */
 /* ----------------------------------------------------- */
-/*
-if(monthlyYearlyD)
+// valor da P2
+var myP2toP4D = localStorage.getItem("myP2D");
+var v1P2toP4D = localStorage.getItem("v1P2D");
+var v2P2toP4D = localStorage.getItem("v2P2D");
+var v3P2toP4D = localStorage.getItem("v3P2D");
+
+if(myP2toP4D == "false")
 {
-    if(valor1P2D)
+    if(v1P2toP4D == "true")
     {
-        var valorfinalP2 = 9;
+        var valorfinalP2D = 9;
     }
-    else if(valor2P2D)
+    if(v2P2toP4D == "true")
     {
-        var valorfinalP2 = 12;
+        var valorfinalP2D = 12;
     }
-    else if(valor3P2D)
+    if(v3P2toP4D == "true")
     {
-        var valorfinalP2 = 15;
+        var valorfinalP2D = 15;
     }
 }
 else
 {
-    if(valor1P2D)
+    if(v1P2toP4D == "true")
     {
-        var valorfinalP2 = 90;
+        var valorfinalP2D = 90;
     }
-    else if(valor2P2D)
+    else if(v2P2toP4D == "true")
     {
-        var valorfinalP2 = 120;
+        var valorfinalP2D = 120;
     }
-    else if(valor3P2D)
+    else if(v3P2toP4D == "true")
     {
-        var valorfinalP2 = 150;
+        var valorfinalP2D = 150;
     }
 }
-*/
+console.log(valorfinalP2D);
+// valor da P2
 /* ----------------------------------------------------- */
 /* Mobile */
 /* ----------------------------------------------------- */
+// valor da P2
+var myP2toP4M = localStorage.getItem("myP2M");
+var v1P2toP4M = localStorage.getItem("v1P2M");
+var v2P2toP4M = localStorage.getItem("v2P2M");
+var v3P2toP4M = localStorage.getItem("v3P2M");
+
+if(myP2toP4M == "false")
+{
+    if(v1P2toP4M == "true")
+    {
+        var valorfinalP2M = 9;
+    }
+    if(v2P2toP4M == "true")
+    {
+        var valorfinalP2M = 12;
+    }
+    if(v3P2toP4M == "true")
+    {
+        var valorfinalP2M = 15;
+    }
+}
+else
+{
+    if(v1P2toP4M == "true")
+    {
+        var valorfinalP2M = 90;
+    }
+    else if(v2P2toP4M == "true")
+    {
+        var valorfinalP2M = 120;
+    }
+    else if(v3P2toP4M == "true")
+    {
+        var valorfinalP2M = 150;
+    }
+}
+console.log(valorfinalP2M);
+// valor da P2
