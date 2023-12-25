@@ -170,7 +170,7 @@
         border-color: hsl(217, 100%, 97%);
     }
 
-    #optionm
+    #optionm_1, #optionm_2, #optionm_3
     {
         display: flex;
         align-items: center;
@@ -276,14 +276,6 @@
     }
     /* --- ON/OFF --- */
 
-    .checkp3
-    {
-        width: 20px;
-        height: 20px;
-        margin: 0;
-        margin-left: 15px;
-    }
-
     .service_1m, .service_2m, .service_3m
     {
         display: flex;
@@ -302,9 +294,12 @@
         align-items: center;
     }
 
-    .somaopcao
+    .adicaop3M1, .adicaop3M2, .adicaop3M3
     {
-        margin-right: 15px;
+        font-family: 'Ubuntu', sans-serif;
+        margin-right: 10px;
+        color: hsl(243, 100%, 62%);
+        pointer-events: none;
     }
 
     .margintop
@@ -378,6 +373,48 @@
         margin: 0;
         font-family: 'Ubuntu', sans-serif;
         color: hsl(354, 84%, 57%);
+    }
+
+    .checkp3_1m, .checkp3_2m, .checkp3_3m
+    {
+        width: 15px;
+        height: 15px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .fundoP4
+    {
+        background-color: hsl(217, 100%, 97%);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .fundoP42
+    {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .hdv
+    {
+        margin: 0;
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(213, 96%, 18%);
+    }
+
+    .ajusteP4
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h3
+    {
+        font-family: 'Ubuntu', sans-serif;
+        color: hsl(243, 100%, 62%);
+        margin: 0;
     }
 }
 
@@ -472,7 +509,7 @@
         margin-bottom: 20px;
     }
 
-    .ajuste2
+    .ajuste2 /* tbm na P4 */
     {
         margin-top: 0;
         margin-bottom: 0;
@@ -769,7 +806,7 @@
         color: hsl(354, 84%, 57%);
     }
 
-    .adicaop3
+    .adicaop3D1, .adicaop3D2, .adicaop3D3
     {
         font-family: 'Ubuntu', sans-serif;
         margin-right: 10px;
@@ -811,7 +848,6 @@
         margin: 0;
     }
 
-    /* final */
     .alinhar
     {
         text-align: center;
