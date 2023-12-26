@@ -545,7 +545,7 @@ if(myP2toP4D == "true")
 // valor da P2
 // valor da P3
 var currentURL_D = window.location.pathname;
-if(currentURL_D == "/p3.html")
+if(currentURL_D == "/p3")
 {
     if(myP2toP4D == "false")
     {
@@ -562,7 +562,7 @@ if(currentURL_D == "/p3.html")
 }
 // valor da P3
 // resultado P4
-if(currentURL_D == "/p4.html")
+if(currentURL_D == "/p4")
 {
     var v1P3toP4D = localStorage.getItem("v1P3D");
     v1P3toP4D = Number(v1P3toP4D);
@@ -707,7 +707,7 @@ if(myP2toP4M == "true")
 // valor da P2
 // valor da P3
 var currentURL_M = window.location.pathname;
-if(currentURL_M == "/p3.html")
+if(currentURL_M == "/p3")
 {
     if(myP2toP4M == "false")
     {
@@ -724,7 +724,7 @@ if(currentURL_M == "/p3.html")
 }
 // valor da P3
 // resultado P4
-if(currentURL_M == "/p4.html")
+if(currentURL_M == "/p4")
 {
     var v1P3toP4M = localStorage.getItem("v1P3M");
     v1P3toP4M = Number(v1P3toP4M);
